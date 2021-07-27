@@ -1,0 +1,26 @@
+.cocktails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cocktails img {
+    width: 100%;
+}
+#modal {
+    position: fixed;
+    top: 10vh;
+    left: 10%;
+    right: 10%;
+    min-height: 80vh;
+    display: none;
+    background: #fff;
+}
+#modal.show {
+    display: block;
+}
+#modal img {
+    width: 100%;
+}
+#modal figure {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}

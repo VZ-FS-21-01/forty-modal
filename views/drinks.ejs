@@ -1,0 +1,20 @@
+<%- include('./partials/head') %>
+
+
+    <%# JSON.stringify(drinks) %>
+        <div class="cocktails">
+            <% drinks.forEach(drink=> {%>
+                <div class="cocktail" onclick="lookupCocktail(<%= drink.idDrink %>)">
+                    <figure>
+                        <img src=<%=drink.strDrinkThumb %> alt=<%= drink.strDrink %>>
+                            <figcaption>
+                                <%= drink.strDrink %>
+                            </figcaption>
+                    </figure>
+                </div>
+                <%})%>
+        </div>
+        <div id="modal">
+
+        </div>
+        <%- include('./partials/foot') %>

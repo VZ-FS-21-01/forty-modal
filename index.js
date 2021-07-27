@@ -18,4 +18,6 @@ app.get('/gin', (req, res) => {
         })
 })
 
+// Jetzt können wir alle routen genauso machen, nur der API Call und der title ändern sich.
+
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`))
